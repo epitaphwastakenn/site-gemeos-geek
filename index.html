@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêmeos Geek - Sebo de HQs e Mangás</title>
+    <!-- Fontes do Google com estilo de Quadrinhos -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Variáveis de Cores (Estilo HQ Clássica) */
+        :root {
+            --amarelo: #FFD700;
+            --vermelho: #E50914;
+            --azul: #0052CC;
+            --preto: #111;
+            --fundo: #f4f4f4;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Comic Neue', cursive, sans-serif;
+            background-color: var(--fundo);
+            color: var(--preto);
+            background-image: radial-gradient(#ccc 15%, transparent 16%), radial-gradient(#ccc 15%, transparent 16%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px; /* Efeito Halftone (pontinhos de HQ) */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Estilo de "Quadro de HQ" para as seções */
+        .comic-panel {
+            background-color: white;
+            border: 5px solid var(--preto);
+            border-radius: 10px;
+            box-shadow: 8px 8px 0px var(--preto);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            position: relative;
+        }
+
+        /* Efeito de balão de fala */
+        .speech-bubble {
+            background-color: var(--amarelo);
+            border: 4px solid var(--preto);
+            border-radius: 20px;
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 4px 4px 0px var(--preto);
+            transform: rotate(-2deg);
+        }
+
+        header {
+            background-color: var(--vermelho);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 8px solid var(--preto);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 4px 4px 0px var(--preto);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: var(--azul);
+            display: inline-block;
+            padding: 5px 15px;
+            border: 3px solid var(--preto);
+            transform: rotate(2deg);
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: var(--vermelho);
+            padding: 15px 30px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.5rem;
+            border: 4px solid var(--preto);
+            border-radius: 8px;
+            box-shadow: 5px 5px 0px var(--preto);
+            transition: all 0.2s;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--preto);
+        }
+
+        .btn.shopee { background-color: #EE4D2D; }
+        .btn.insta { background-color: #E1306C; }
+        .btn.face { background-color: #1877F2; }
+
+        /* Galeria em Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 4px solid var(--preto);
+            box-shadow: 4px 4px 0px var(--preto);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--preto);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gêmeos Geek</h1>
+        <p>Seu Sebo Multiversal de HQs & Mangás!</p>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="comic-panel" style="text-align: center; background-color: #E8F4F8;">
+            <div class="speech-bubble" style="margin-bottom: 20px; font-size: 1.5rem;">POW! BAM! BOOM!</div>
+            <h2>Compramos, Vendemos e Recebemos Doações</h2>
+            <p style="font-size: 1.2rem;">Novos, seminovos e usados. Complete sua coleção da DC, Marvel, mangás clássicos e muito mais com preços justos!</p>
+            <h3 style="color: var(--vermelho); font-size: 2rem;">📦 ENTREGAMOS PARA TODO O BRASIL! 📦</h3>
+        </section>
+
+        <!-- Quem Somos -->
+        <section class="comic-panel">
+            <h2>🦸‍♂️ Quem Somos</h2>
+            <p>A <strong>Gêmeos Geek</strong> nasceu da paixão por colecionar boas histórias. Somos um sebo especializado em quadrinhos e mangás. Nosso superpoder é fazer os gibis circularem: aceitamos doações, compramos acervos parados e revendemos edições novas, seminovas e usadas.</p>
+            <p>Acreditamos que toda revista merece ser lida e não ficar pegando poeira na estante. Junte-se à nossa liga e encontre aquela edição que falta na sua coleção!</p>
+        </section>
+
+        <!-- Onde Vendemos -->
+        <section class="comic-panel" style="text-align: center; background-color: #fffacd;">
+            <h2>🛒 Onde Vendemos</h2>
+            <p>Nossa base principal de vendas é a <strong>Shopee</strong>, garantindo frete acessível e segurança para você. Siga nossas redes para ficar por dentro das novidades e garimpos que chegam todos os dias!</p>
+            
+            <a href="URL_DA_SUA_SHOPEE" target="_blank" class="btn shopee">Comprar na Shopee</a>
+            <a href="URL_DO_SEU_INSTAGRAM" target="_blank" class="btn insta">Instagram</a>
+            <a href="URL_DO_SEU_FACEBOOK" target="_blank" class="btn face">Facebook</a>
+        </section>
+
+        <!-- Galeria / Acervo -->
+        <section class="comic-panel">
+            <h2>📸 Nosso Acervo</h2>
+            <p>Dá uma olhada no tipo de material que passa pela nossa base (arraste pro carrinho antes que acabe!):</p>
+            <div class="gallery">
+                <!-- Substitua os links abaixo pelas fotos reais dos seus produtos -->
+                <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?auto=format&fit=crop&q=80&w=400" alt="Pilha de Quadrinhos Marvel">
+                <img src="https://images.unsplash.com/photo-1608889825103-eb5ed706fc64?auto=format&fit=crop&q=80&w=400" alt="Pilha de Mangás">
+                <img src="https://images.unsplash.com/photo-1588497859490-85d1c17db96d?auto=format&fit=crop&q=80&w=400" alt="Action Figures e Quadrinhos">
+            </div>
+        </section>
+
+        <!-- Onde Ficamos -->
+        <section class="comic-panel" style="background-color: #fce4ec;">
+            <h2>📍 Onde Ficamos</h2>
+            <p>Nossa base secreta de operações fica localizada em <strong>Santos - SP</strong>.</p>
+            <p>Atualmente nossa operação é <strong>100% online</strong>. Cuidamos do acervo por aqui e despachamos pacotes super protegidos via Correios/Transportadora direto para a sua casa, em qualquer lugar do Brasil!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gêmeos Geek. Todos os direitos reservados. Não precisa de visão de raio-x, nossos preços são transparentes!</p>
+    </footer>
+
+</body>
+</html>
